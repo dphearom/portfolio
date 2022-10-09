@@ -1,10 +1,10 @@
-import Nav from "./components/Nav";
+import Nav from "./nav.js"
 
 export default function Home() {
     return (
       <>
         <div>
-          <Nav />
+          <Nav/>
         </div>
         <div className="w-full mx-auto">
           <h1 className="text-4xl text-center">Testing The homepage</h1>
