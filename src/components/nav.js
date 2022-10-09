@@ -7,7 +7,7 @@ export default function Nav() {
             <h1 className="text-[#00d8ff]">PHEAROM DUONG</h1>
           </div>
           <div>
-                <ul className="flex text-white items-center">
+                <ul className="flex text-red-400 items-center">
                     <li>Projects</li>
                     <li>Resume</li>
                     <button className="ml-4">Contact</button>
