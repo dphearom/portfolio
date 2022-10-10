@@ -1,4 +1,6 @@
 import Nav from "./nav.js"
+import Hero from "./hero.js";
+import Body from "./body.js"
 
 export default function Home() {
     return (
@@ -6,8 +8,11 @@ export default function Home() {
         <div>
           <Nav/>
         </div>
-        <div className="w-full mx-auto">
-          <h1 className="text-4xl text-center">Testing The homepage</h1>
+        <div>
+          <Hero/>
+        </div>
+        <div>
+          <Body/>
         </div>
       </>
     );
