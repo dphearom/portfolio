@@ -9,7 +9,7 @@ export default function Nav() {
   };
   return (
     <>
-      <div className="w-full h-[90px] bg-black">
+      <div className="w-full h-[90px] bg-[#004F76] container mx-auto">
         <div className="max-w-1240px mx-auto px-4 flex justify-between items-center h-full">
           <div>
             <img
@@ -37,7 +37,7 @@ export default function Nav() {
           <div
             className={
               nav
-                ? "w-full bg-[#1E2761] text-white absolute top-[90px] left-0 flex justify-center text-center"
+                ? "w-full bg-[#050A30] text-white absolute top-[90px] left-0 flex justify-center text-center"
                 : "absolute left-[-100%]"
             }
           >
