@@ -30,4 +30,8 @@
     p{
         @apply text-lg text-white
     }
+
+    span{
+        @apply text-[#2E8BC0]
+    }
 }

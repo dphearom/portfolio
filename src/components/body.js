@@ -1,6 +1,8 @@
 //link--https://xd.adobe.com/view/b85702f7-c9c2-4775-8bf6-e309b6e9a207-ed04/screen/19424749-18dc-4750-8182-c02ee2d76868/?fullscreen
 //link--https://qnswesleyan.wescreates.wesleyan.edu/
 import klembox from "../assets/klembox.png";
+import questbridge from "../assets/questbridge.png";
+import ourcampus from "../assets/ourcampus.png";
 
 export default function Body() {
   const project = [
@@ -8,7 +10,7 @@ export default function Body() {
       name: "Wesleyan's QuestBridge Website",
       desc: "asdsafsadas",
       date: "03/2022 - Present",
-      image: klembox,
+      image: questbridge,
     },
     {
       name: "Text Similarity Detection Tool",
@@ -20,7 +22,7 @@ export default function Body() {
       name: "UI/Front-end Internship at Klembox",
       desc: "asdsafsadas",
       date: "05/2021-09/2021",
-      image: klembox,
+      image: ourcampus,
     },
     {
       name: "Wesleyan's QuestBridge Website",
@@ -52,12 +54,14 @@ export default function Body() {
             </h1>
             <p className="text-white pt-16">
               I am a senior at Wesleyan University majoring in Computer Science
-              with a passion for <span className="text-[#2E88C0]">Web Development</span>, Software Development, and Data
-              Science. Throughout my academic years, I pursue the opportunities
-              to grow and challenge my development skills through being a UI
-              designer for Wesleyan's first consolidated application OurCampus,
-              a researcher in data and text mining, and a front-end team leader for
-              Wesleyan University's QuestBridge Chapter.
+              with a passion for{" "}
+              <span className="text-[#2E88C0]">Web Development</span>, <span>Software
+              Development</span>, and <span>Data Science</span>. Throughout my academic years, I
+              pursue the opportunities to grow and challenge my development
+              skills through being a UI designer for Wesleyan's first
+              consolidated application OurCampus, a researcher in data and text
+              mining, and a front-end team leader for Wesleyan University's
+              QuestBridge Chapter.
             </p>
             <p></p>
           </section>
@@ -74,7 +78,7 @@ export default function Body() {
                     <img
                       src={project.image}
                       alt="Screenshot of the UI design"
-                      className="object-cover w-full"
+                      className="object-cover w-full h-48"
                     />
                     <h2 className="text-2xl pt-4">{project.name}</h2>
                     <h2 className="text-sm text-gray-300">{project.date}</h2>
