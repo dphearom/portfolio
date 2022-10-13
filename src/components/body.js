@@ -3,6 +3,8 @@
 import klembox from "../assets/klembox.png";
 import questbridge from "../assets/questbridge.png";
 import ourcampus from "../assets/ourcampus.png";
+import textsimilarity from "../assets/text_similarity.png";
+import musicrating from "../assets/musicrating.png";
 
 export default function Body() {
   const project = [
@@ -15,32 +17,26 @@ export default function Body() {
     {
       name: "Text Similarity Detection Tool",
       desc: "asdsafsadas",
-      date: "",
-      image: klembox,
+      date: "05/2022-07/2022",
+      image: textsimilarity,
     },
     {
       name: "UI/Front-end Internship at Klembox",
       desc: "asdsafsadas",
       date: "05/2021-09/2021",
-      image: ourcampus,
-    },
-    {
-      name: "Wesleyan's QuestBridge Website",
-      desc: "asdsafsadas",
-      date: "",
       image: klembox,
     },
     {
       name: "Music Rating Web Application",
       desc: "asdsafsadas",
       date: "",
-      image: klembox,
+      image: musicrating,
     },
     {
       name: "UI Designer for OurCampus",
       desc: "asdsafsadas",
       date: "",
-      image: klembox,
+      image: ourcampus,
     },
   ];
 
@@ -55,25 +51,36 @@ export default function Body() {
             <p className="text-white pt-16">
               I am a senior at Wesleyan University majoring in Computer Science
               with a passion for{" "}
-              <span className="text-[#2E88C0]">Web Development</span>, <span>Software
-              Development</span>, and <span>Data Science</span>. Throughout my academic years, I
-              pursue the opportunities to grow and challenge my development
-              skills through being a UI designer for Wesleyan's first
-              consolidated application OurCampus, a researcher in data and text
-              mining, and a front-end team leader for Wesleyan University's
-              QuestBridge Chapter.
+              <span className="text-[#2E88C0]">Web Development</span>,{" "}
+              <span>Software Development</span>, and <span>Data Science</span>.
+              Throughout my academic years, I pursue the opportunities to grow
+              and challenge my development skills through being a UI designer
+              for Wesleyan's first consolidated application OurCampus, a
+              researcher in data and text mining, and a front-end team leader
+              for Wesleyan University's QuestBridge Chapter.
             </p>
-            <p></p>
+            <br></br>
+            <p>
+              In addition to my passion for coding, I love road cycling and
+              assembling model car kits. Living in Middletown, Connecticut for 3
+              years, I enjoy the balance between steep climbs and fast roads for
+              cycling as well as looking for rare model car kits to add to my
+              collections!
+            </p>
+            <br></br>
+            <p>
+              If you would like to connect or have a conversation, feel free to <a href="mailto:rduong@wesleyan.edu" className="underline">reach out!</a> 
+            </p>
           </section>
         </div>
-        <div className="pt-16">
+        <div className="pt-16" id="projects">
           <h1 className="border-b-[#2E8BC0] border-4 border-t-0 border-x-0 w-[120px] text-white">
             Projects
           </h1>
           <section className="grid grid-row-4 md:grid-cols-3 gap-7 px-5 pt-16 text-white mx-auto text-">
             {project.map((project) => {
               return (
-                <div className="border-2 rounded-lg border-[#2E8BC0] p-2">
+                <div className="border-2 rounded-lg border-[#2E8BC0] p-2 transition duration-[850ms] hover:scale-110 hover:border-[3px]">
                   <div>
                     <img
                       src={project.image}

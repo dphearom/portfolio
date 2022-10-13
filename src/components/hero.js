@@ -12,15 +12,12 @@ export default function Hero() {
             <AutoTyping
               active
               textRef=" Phearom Duong"
-              writeSpeed={150} // <number>
-              deleteSpeed={150} // <number>
-              delayToWrite={1000} // <number>
+              writeSpeed={150}
+              deleteSpeed={150}
+              delayToWrite={1000}
               delayToDelete={2000}
             />
-            <BlinkCursor 
-              active
-              blinkSpeed = {500}
-            />
+            <BlinkCursor active blinkSpeed={500} />
           </h2>
           <h3 className="text-2xl py-2">Developer</h3>
           <p className="text-md py-5 leading-8 text-white w-96">

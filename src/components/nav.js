@@ -1,6 +1,7 @@
 import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
 import React, { useState } from "react";
 import navpic from "../assets/navpic.JPG";
+import { HashLink } from "react-router-hash-link";
 
 export default function Nav() {
   const [nav, setNav] = useState(false);
@@ -20,8 +21,28 @@ export default function Nav() {
           </div>
           <div className="hidden md:flex">
             <ul className="flex text-white items-center">
-              <li>Projects</li>
-              <li>Resume</li>
+              <li>
+                <HashLink
+                  smooth
+                  to="/#projects"
+                  class="group transition-all duration-300 ease-in-out"
+                >
+                  <span class="text-white pb-2 bg-left-bottom bg-gradient-to-r from-[#2E8BC0] to-[#2E8BC0] bg-[length:0%_2px] bg-no-repeat group-hover:bg-[length:100%_2px] transition-all duration-500 ease-out">
+                    Projects
+                  </span>
+                </HashLink>
+              </li>
+              <li>
+                <HashLink
+                  smooth
+                  to="/#projects"
+                  class="group transition-all duration-300 ease-in-out"
+                >
+                  <span class="text-white pb-2 bg-left-bottom bg-gradient-to-r from-[#2E8BC0] to-[#2E8BC0] bg-[length:0%_2px] bg-no-repeat group-hover:bg-[length:100%_2px] transition-all duration-500 ease-out">
+                    Resume
+                  </span>
+                </HashLink>
+              </li>
               <button className="ml-4">Contact</button>
             </ul>
           </div>
