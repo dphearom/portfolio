@@ -62,7 +62,7 @@ export default function Nav() {
                 : "absolute left-[-100%]"
             }
           >
-            <ul>
+            <ul>``
               <li className="text-2xl">Projects</li>
               <li className="text-2xl">Resume</li>
               <button className="m-8">Contact</button>
