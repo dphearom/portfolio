@@ -17,7 +17,7 @@ export default function Hero() {
               delayToWrite={1000}
               delayToDelete={2000}
             />
-           
+
             <BlinkCursor active blinkSpeed={500} />
           </h2>
           <h3 className="text-2xl py-2">Developer</h3>
@@ -26,8 +26,12 @@ export default function Hero() {
             career in Front-End engineer or Software Engineer
           </p>
           <div className="text-5xl flex justify-center gap-16 py-3 text-white">
-            <AiFillLinkedin />
-            <AiFillGithub />
+            <a href="https://www.linkedin.com/in/phearom-d-503862195">
+              <AiFillLinkedin />
+            </a>
+            <a href="https://github.com/dphearom">
+              <AiFillGithub />
+            </a>
           </div>
           <div className="justify-center">
             <img

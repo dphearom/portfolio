@@ -33,17 +33,15 @@ export default function Nav() {
                 </HashLink>
               </li>
               <li>
-                <HashLink
-                  smooth
-                  to="/#projects"
-                  class="group transition-all duration-300 ease-in-out"
-                >
-                  <span class="text-white pb-2 bg-left-bottom bg-gradient-to-r from-[#2E8BC0] to-[#2E8BC0] bg-[length:0%_2px] bg-no-repeat group-hover:bg-[length:100%_2px] transition-all duration-500 ease-out">
+                <a href={"/resume.pdf"} download>
+                  <span class="text-white pb-2 bg-left-bottom bg-gradient-to-r from-[#2E8BC0] to-[#2E8BC0] bg-[length:0%_2px] bg-no-repeat hover:bg-[length:100%_2px] transition-all duration-500 ease-out">
                     Resume
                   </span>
-                </HashLink>
+                </a>
               </li>
-              <button className="ml-4">Contact</button>
+              <a href="mailto:rduong@wesleyan.edu">
+                <button className="m-8 ">Contact</button>
+              </a>
             </ul>
           </div>
 
@@ -59,13 +57,31 @@ export default function Nav() {
             className={
               nav
                 ? "w-full bg-[#050A30] text-white absolute top-[90px] left-0 flex justify-center text-center"
-                : "absolute left-[-100%]"
+                : "hidden"
             }
           >
-            <ul>``
-              <li className="text-2xl">Projects</li>
-              <li className="text-2xl">Resume</li>
-              <button className="m-8">Contact</button>
+            <ul className="md:hidden">
+              <li className="text-2xl">
+                <HashLink
+                  smooth
+                  to="/#projects"
+                  class="group transition-all duration-300 ease-in-out"
+                >
+                  <span class="text-white pb-2 bg-left-bottom bg-gradient-to-r from-[#2E8BC0] to-[#2E8BC0] bg-[length:0%_2px] bg-no-repeat group-hover:bg-[length:100%_2px] transition-all duration-500 ease-out">
+                    Projects
+                  </span>
+                </HashLink>
+              </li>
+              <li className="text-2xl">
+                <span class="text-white pb-2 bg-left-bottom bg-gradient-to-r from-[#2E8BC0] to-[#2E8BC0] bg-[length:0%_2px] bg-no-repeat hover:bg-[length:100%_2px] transition-all duration-500 ease-out">
+                  <a href={"/resume.pdf"} download>
+                    Resume
+                  </a>
+                </span>
+              </li>
+              <a href="mailto:rduong@wesleyan.edu">
+                <button className="m-8 ">Contact</button>
+              </a>
             </ul>
           </div>
         </div>

@@ -1,6 +1,7 @@
 import Nav from "./nav.js"
 import Hero from "./hero.js";
 import Body from "./body.js"
+import Footer from "./footer.js"
 
 export default function Home() {
     return (
@@ -13,6 +14,9 @@ export default function Home() {
         </div>
         <div>
           <Body/>
+        </div>
+        <div>
+          <Footer/>
         </div>
       </>
     );

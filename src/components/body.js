@@ -16,6 +16,13 @@ import detect1 from "../assets/detect1.png";
 import qb1 from "../assets/qb0.png";
 import qb2 from "../assets/qb1.png";
 import React, { useState } from "react";
+import klem1 from "../assets/klem0.png";
+import klem2 from "../assets/klem1.png";
+import music1 from "../assets/music0.png";
+import music2 from "../assets/music1.png";
+import ui1 from "../assets/ui1.png";
+import ui2 from "../assets/ui2.png";
+import { AiOutlineCode } from "react-icons/ai";
 
 export default function Body() {
   const [showModal, setShowModal] = React.useState(false);
@@ -31,6 +38,7 @@ export default function Body() {
       image: questbridge,
       carousel1: qb1,
       carousel2: qb2,
+      link: "https://qnswesleyan.wescreates.wesleyan.edu/",
     },
     {
       name: "Text Similarity Detection Tool",
@@ -41,30 +49,34 @@ export default function Body() {
       image: textsimilarity,
       carousel1: detect,
       carousel2: detect1,
+      link: "https://colab.research.google.com/drive/13O8TeRBeuii_q1Xo5zbtkKv-7QT9ztHI?usp=sharing",
     },
     {
       name: "UI/Front-end Internship at Klembox",
       desc: "I interned remotely at Klembox where I had the opportunity to design and construct a website for the startup. Utilizing Adobe XD, my team and I employed crucial design elements to aid accessibility for Khmer speakers in selecting and purchasing hands-on learning kits. Through the support and coaching from my peers, I learned to implement e-commerce API to expedite bulk orders of products and adopted Amazon Web Services to evaluate the website. This collaborative experience empowered me to grow my understanding of features in web development, and I hope to continue my passion for designing and actualizing new features for different platforms.",
       date: "05/2021-09/2021",
       image: klembox,
-      carousel1: detect,
-      carousel2: detect1,
+      carousel1: klem1,
+      carousel2: klem2,
+      link: "https://xd.adobe.com/view/b85702f7-c9c2-4775-8bf6-e309b6e9a207-ed04/screen/19424749-18dc-4750-8182-c02ee2d76868/?fullscreen",
     },
     {
       name: "Music Rating Web Application",
       desc: "Through my Software Engineering course, I expanded my understanding of the software development process and utilized a tech stack to develop a web application for a community of music lovers. I coded with React and Bootstrap frameworks to manage the front end of the application and implemented REST API for user interactions. The web application was deployed on Google Firebase with a Django backend hosted on Heroku for user data management. Through a collaboration with two other students, we focused on converting the web application to a mobile application with React Native. While employing version control via GitHub, we overcame various hurdles and implemented various rating and ranking features on the application.",
       date: "01/2022-04/2022",
       image: musicrating,
-      carousel1: detect,
-      carousel2: detect1,
+      carousel1: music2,
+      carousel2: music1,
+      link: "https://rendatunes-27f5b.firebaseapp.com/",
     },
     {
       name: "UI Designer for OurCampus",
       desc: "As a UI designer for OurCampus, a consolidated mobile application for Wesleyan students’ resources, I applied fundamental design elements to improve the features of a course scheduling and registration feature. I kept consistent communication with the mobile developers to discuss the feasibility of the design. This opportunity expanded my knowledge in research and implementation of key design elements in UI designs. ",
       date: "08/2021-Present",
       image: ourcampus,
-      carousel1: detect,
-      carousel2: detect1,
+      carousel1: ui2,
+      carousel2: ui1,
+      link: "https://www.figma.com/file/tZARBb3guAJpWv4Xx6S7vL/Quick-Components?node-id=116%3A2",
     },
   ];
 
@@ -90,6 +102,13 @@ export default function Body() {
       image: django,
     },
   ];
+
+  // const [numPages, setNumPages] = useState(null);
+  // const [pageNumber, setPageNumber] = useState(1);
+
+  // function onDocumentLoadSuccess() {
+  //   setNumPages(numPages);
+  // };
 
   return (
     <>
@@ -130,7 +149,7 @@ export default function Body() {
             <h1 className="border-b-[#2E8BC0] border-4 border-t-0 border-x-0 w-[180px] text-white">
               Tech Stacks
             </h1>
-            <div className="grid grid-cols-3 gap-4 text-white pt-16">
+            <div className="grid grid-cols-5 gap-4 text-white pt-16">
               {techStacks.map((techStacks) => {
                 return (
                   <div className="flex flex-col items-center">
@@ -138,7 +157,7 @@ export default function Body() {
                     <img
                       src={techStacks.image}
                       alt="logo"
-                      className="h-[50px] w-[50px] pt-2"
+                      className="h-[70px] w-[70px] pt-2"
                     />
                   </div>
                 );
@@ -219,10 +238,17 @@ export default function Body() {
                             {modalData.desc}
                           </p>
                         </div>
-                        <div className="flex items-center justify-end p-6 border-t border-solid border-slate-200 rounded-b">
-                          <button onClick={() => setShowModal(false)}>
-                            Close
-                          </button>
+                        <div className="flex flex-row items-center justify-between pt-2 pb-2 px-4 border-t border-solid border-slate-200 rounded-b">
+                          <div className="flex flex-row">
+                            <a href={modalData.link}>
+                              <AiOutlineCode className="h-8 w-8" />
+                            </a>
+                          </div>
+                          <div className="flex items-center justify-end">
+                            <button onClick={() => setShowModal(false)}>
+                              Close
+                            </button>
+                          </div>
                         </div>
                       </div>
                     </div>
